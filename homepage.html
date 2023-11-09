@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body{
+            margin:0;
+            background-image: url('homepage.jpg');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .containers{
+
+            margin-left: 130px;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 500px;
+            width: 1100px;
+            column-gap: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        .fam-div{
+            background-color: hsla(0, 0%, 0%, 0.822);
+            text-align: center;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .fam-div:hover{
+            border: 3px solid white;
+        }
+
+        .register-div{
+            background-color: hsla(0, 0%, 0%, 0.822);
+            text-align: center;
+            border-radius: 20px;    
+        }
+
+        .register-div:hover{
+            border: 3px solid white;
+        }
+
+        .report-div{
+            background-color: hsla(0, 0%, 0%, 0.822);
+            text-align: center;
+            border-radius: 20px;
+            color: white;
+        }
+        .report-div:hover{
+            border: 3px solid white;
+        }
+
+        
+        .div1-title{
+            color:white;
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 60%;
+        
+        }
+
+        .div2-title,.div3-title{
+            color:white;
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 60%;
+        
+        }
+
+        
+        .register-div{
+            color: white;
+            
+        }
+
+        
+
+        .report-desc{
+            text-align: center;
+            margin-top: 160px;
+            margin-bottom: 0;
+        }
+       
+        .home-header{
+            display: flex;
+            flex-direction: row;
+            height: 55px;
+            position: fixed;
+            top:0;
+            right: 0;
+            left: 0;
+            background-color: transparent;
+        }
+
+        .account-img{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-left:5px;
+        }
+        .logout-btn{
+            display: inline-block;
+            border: none;
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 15px;
+            cursor: pointer;
+            padding-left: 1140px;
+        }
+
+        .home-icon{
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            background-color:transparent;
+        }
+
+        .home-txt{
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: capitalize;
+            padding-left: 5px;
+            margin-top: 15px;
+        }
+    </style>
+    <script>
+        function gotoforms(){
+            window.location="familycard.html";
+        }
+        function gotoreg(){
+            window.location="register.html";
+        }
+        function gotorep(){
+            window.location=".html";
+        }
+    </script>
+</head>
+<body>
+    <div class="home-header">
+        <img src="church.png" class="home-icon">
+        <p class="home-txt">Home</p>
+         
+        <button class="logout-btn">Logout</button>
+        <img src="account-2.png" class="account-img">
+    </div>
+
+    <div class="containers">
+        <div class="fam-div" onclick="gotoforms()">
+            <p class="div1-title">FAMILY CARD</p>
+        </div>
+        <div class="register-div" onclick="gotoreg()">
+           
+            <p class="div2-title">REGISTER</p>
+
+        </div>
+        <div class="report-div" onclick="gotorep()">
+            <p class="div3-title">CREATE REPORT</p>
+        </div>
+    </div>
+    
+</body>
+</html> 

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baptism Form</title>
+    <style>
+        body{
+            background-image: url('baptism.jpg');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .form{
+            background-color:rgba(95, 158, 160, 0.9);
+            display: inline-block;
+            width: 800px;
+            height: 2180px;
+            box-shadow: 1px 1px 20px black;
+            margin-left: 250px;
+            padding-left: 90px;
+            padding-top: 50px;
+            border-radius: 10px;
+            color: white;
+            
+        }
+
+        .form input{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: black;
+            padding: 10px 50px;
+            text-align: left;
+            
+        }
+
+        .form label{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .title{
+            margin-top: -10px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+        }
+
+        #card{
+            margin-left: 30px;
+        }
+
+        #head-code{
+            margin-left: 170px;
+        }
+
+        #area{
+            margin-left: 320px;
+        }
+
+        #card-no{
+            margin-left: 192px;
+        }
+
+        #name{
+            margin-left: 308px;
+        }
+        
+        #relationship{
+            margin-left: 225px;
+        }
+
+        #sex{
+            margin-left: 50px;
+        }
+
+        #dob{
+            margin-left: 227px;
+        }
+
+        #age{
+            margin-left: 330px;
+        }
+        
+        #Blood-group{
+            margin-left: 224px;
+        }
+
+        #address{
+            margin-left: 275px;
+        }
+
+        #anbiam{
+           margin-left: 285px; 
+        }
+
+        #marriage-date{
+            margin-left:215px ;
+        }
+
+        #place-of-marriage{
+            margin-left: 170px;
+        }
+        	
+        #baptized-date{
+            margin-left:214px ;
+        }
+
+        #place-of-baptizm{
+            margin-left:175px ;
+        }
+
+        #communion-date{
+            margin-left: 170px;
+        }
+
+        #place-by{
+            margin-left:117px ;
+        }
+
+        #god-father{
+            margin-left:240px ;
+        }
+
+        #god-mother{
+            margin-left:232px ;
+        }
+
+        #monthly-income{
+            margin-left:180px ;
+        }
+
+        #edu-qualification{
+            margin-left:163px ;
+        }
+
+        #mob-no{
+            margin-left: 250px;
+        }
+
+        #lan-no{
+            margin-left:240px ;
+        }
+
+        #work{
+            margin-left: 190px;
+        }
+
+        .clear-btn,.submit-btn{
+            border:none;
+            background-color: black;
+            color:white;
+            padding: 20px 50px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .clear-btn{
+            margin-left: 200px;
+            margin-right: 50px;
+        }
+        #back{
+            width: 50px;
+            position: absolute;
+            top: 5;
+            left: 5;
+        }
+    </style>
+    <script>
+        function goback() {
+            window.location="homepage.html"
+        }
+    </script>
+</head>
+<body>
+    <img src="left.png" id="back" onclick="goback();">
+    <div class="form">
+        <p class="title">Baptism Details</p>
+        <label for="head-code">Cerificate No:</label>
+        <input type="text" name="head-code" id="head-code" required>
+        
+        <br><br><br>
+        <label for="Name">Christian Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <br><br><br>
+        <label for="card-no">Family Card No:</label>
+        <input type="number" name="card-no" id="card-no" required>
+
+        <br><br><br>
+        <label for="sex">Sex:</label>
+        <input type="radio" name="sex" id="sex">
+        <label for="card">Male</label>
+        <input type="radio" name="sex" id="sex">
+        <label for="card">Female</label>
+
+        <br><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type ="date" name="dob" id="dob" required>
+        
+        <br><br><br>
+
+        <label for="area">Place of Birth:</label>
+        <input type="text" name="Area" id="area" required>
+
+        <br><br><br>
+
+        <label for="baptized date">date of Baptism:</label>
+        <input type ="date" name="baptized date" id="baptized-date">
+
+        <br><br><br>
+
+        <label for="place of baptizm">Place of Baptizm:</label>
+        <input type="text" name="place of baptizm" id="place-of-baptizm">
+
+        <br><br><br>
+
+        <label for="god father">Father's Name :</label>
+        <input type="text" name="god father" id="god-father">
+
+        <br><br><br>
+
+        <label for="god mother">Mother's Name:</label>
+        <input type="text" name="god mother" id="god-mother">
+
+        <br><br><br>
+
+        <label for="address">Residence of Parents:</label>
+        <input type= "text" name="address" id="address">
+
+        <br><br><br>
+
+        <label for="god father">God Father :</label>
+        <input type="text" name="god father" id="god-father">
+
+        <br><br><br>
+
+        <label for="god mother">God Mother :</label>
+        <input type="text" name="god mother" id="god-mother">
+
+        <br><br><br>
+
+        
+
+        <label for="relationship">married(to whom, when and where):</label>
+        <input type="text" name="relationship" id="relationship" required>
+
+        <br><br><br>
+
+        <label for="marriage date">register at:</label>
+        <input type ="date" name="marriage date" id="marriage-date">
+
+        <br><br><br>
+
+          
+        <button class="clear-btn">Clear</button>
+        <button class="submit-btn">Submit</button>
+    </div>
+
+        
+</body>
+</html>
